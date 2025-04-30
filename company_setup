@@ -1,0 +1,25 @@
+CREATE TABLE internships (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    required_skills TEXT,
+    min_cgpa DECIMAL(3,2),
+    eligible_branch VARCHAR(100),
+    duration INT,
+    stipend INT,
+    location VARCHAR(100),
+    start_date DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    cgpa DECIMAL(3,2),
+    branch VARCHAR(100),
+    skills TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
